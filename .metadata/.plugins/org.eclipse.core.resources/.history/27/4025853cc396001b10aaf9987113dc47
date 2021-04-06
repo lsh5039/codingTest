@@ -1,0 +1,43 @@
+package codingTest02;
+
+import java.util.Arrays;
+
+public class Main02 {
+	public static void main(String[] args) {
+		int [] prices = {1, 2, 3, 2, 3};
+		
+		Main02 main  = new Main02();
+		int[] reuslt = main.solution(prices);
+		System.out.println("result :: "+Arrays.toString(reuslt));
+		
+		
+	}
+	
+	
+	  public int[] solution(int[] prices) {
+	        int[] answer = {};
+	        answer = new int[prices.length];
+	        int idx = 0;//떨어질 간격
+	        int target = 0;//비교할 대상 index
+	        int current = 0;//비굘할 대상과 비교할 index를 가리킬 눈금
+	        while(true) {
+	        	if(prices[current] > prices[idx]) {//떨어지면
+	        		answer[target] = idx;
+	        		idx = 0;
+	        		target++;
+	        	}else {//올라가거나 같으면
+	        		idx++;
+	        		System.out.println("idx :: "+idx);
+	        	}
+	        	
+	        	if(target == prices.length) {
+	        		return answer;
+	        	}
+	        	
+	        	
+	        }
+	        
+	        
+	        
+	    }
+}
