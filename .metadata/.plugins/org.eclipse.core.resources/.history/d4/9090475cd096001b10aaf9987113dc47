@@ -1,0 +1,86 @@
+package codingTest03;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Main03 {
+	
+	public class Program {
+		private int percent;
+		private final int speeds;
+		private int count = 0;
+		
+		public Program(int percent, int speeds) {
+			this.percent =percent;
+			this.speeds = speeds;
+		}
+
+		public int getPercent() {
+			return percent;
+		}
+
+		public void setPercent(int percent) {
+			this.percent = percent;
+		}
+
+		public int getCount() {
+			return count;
+		}
+
+		public void setCount(int count) {
+			this.count = count;
+		}
+
+		public int getSpeeds() {
+			return speeds;
+		}
+		
+		
+		
+		
+	}
+	
+	
+	public int[] solution(int[] progresses, int[] speeds) {
+        int[] answer = {};
+        
+        int current = 0; //가리키는 idx
+        int[] arr = new int[progresses.length - 1];//대기중인 완성된 progresses 저장
+        
+        List<Program> list = new ArrayList<Program>();
+        for(int i=0; i<progresses.length-1; i++) {
+        	Program prg = new Program(progresses[i], speeds[i]);
+        	list.add(prg);
+        }
+       
+        while(true) {
+        	if(current == progresses.length -1) {
+        		break;
+        	}
+        	
+        	list.get(current).setPercent(list.get(current).getPercent() + list.get(current).getSpeeds());
+        	list.get(current).setCount(list.get(current).getCount()+1);
+        	current++;
+        }
+        
+        
+        
+        
+        
+        return answer;
+    }
+	
+	
+	
+	public static void main(String[] args) {
+		int[] progresses = {93, 30, 55}; 
+		int[] speeds = {1, 30, 5};
+		
+		Main03 main = new Main03();
+		int result[] = main.solution(progresses, speeds);
+		System.out.println("result :: "+Arrays.toString(result));
+	}
+}
+
+

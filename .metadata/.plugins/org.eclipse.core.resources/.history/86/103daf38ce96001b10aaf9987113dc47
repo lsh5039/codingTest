@@ -1,0 +1,39 @@
+package codingTest03;
+
+import java.util.Arrays;
+
+public class Main03 {
+	public int[] solution(int[] progresses, int[] speeds) {
+        int[] answer = {};
+        
+        int current = 0; //가리키는 idx
+        int[] arr = new int[progresses.length - 1];//대기중인 완성된 progresses 저장
+        
+        while(true) {
+        	
+        	
+        	
+        	
+        	
+        }
+        
+        
+        
+        
+        
+        return answer;
+    }
+	public class Program() {
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		int[] progresses = {93, 30, 55}; 
+		int[] speeds = {1, 30, 5};
+		
+		Main03 main = new Main03();
+		int result[] = main.solution(progresses, speeds);
+		System.out.println("result :: "+Arrays.toString(result));
+	}
+}
