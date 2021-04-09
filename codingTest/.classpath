@@ -4,6 +4,5 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="hash"/>
 	<classpathentry kind="src" path="stackQue"/>
-	<classpathentry kind="src" path="stackQue02"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -75,42 +75,47 @@ public class Main03 {
         }
         answer = new int[arr.length-1];
         System.out.println(Arrays.toString(arr));
-        System.out.println(list.toString());
         int index = 0;//비교타겟
         int target = 0;//중심
 		int cnt = 0;//종료된 개수
 		int arrIndex = 0;  
-		
+		boolean[] ok = new boolean[arr.length];
 		
 		while(true) {
-			int num = arr[target];
-			System.out.println("num :: "+num);
+			int num = arr[index];
 			
 			for(int i = index;i<arr.length-1; i++) {
 				arr[i] = arr[i] - num;
-				if(arr[i]<=0) {//프로세스종료
-					cnt++;
-					index++;
-				}else {//프로세스 비종료
-					answer[arrIndex++] =cnt;
-					System.out.println("answer : "+Arrays.toString(answer));
-					cnt = 0;
-					target = index;
-					break;//for문 종료
-				}
-				System.out.println(i+"번째 arr"+Arrays.toString(answer));
 			}
-			if(index == arr.length-1) {
+			//0 0 -9 -9 
+			
+			for(int i = index;i<arr.length-1; i++) {
+				if(arr[i]<=0) {
+					ok[i] = true;
+				}else {
+					ok[i] = false;
+				}
+			}
+			
+			for(int i=index;i<ok.length; i++) {
+				if(ok[i]) {
+					cnt++;
+				} else {
+					answer[arrIndex++] = cnt;
+				}
+			}
+			index++;
+			System.out.println(Arrays.toString(answer));
+			System.out.println(Arrays.toString(ok));
+			if(index == arr.length) {
 				return answer;
 			}
-			
-			
 			
 		}
 		
 		
 		
-		
+			//return answer;
 		
     }
 	

@@ -1,0 +1,28 @@
+package codingTest04;
+
+public class Main04 {
+	public static void main(String[] args) {
+		
+	}
+	
+
+
+	
+	
+	
+    
+    
+    public int solution(int[] priorities, int location) {
+        int answer = 0;
+        
+        List<?> list = new ArrayList<Integer>();
+        for(Integer item : list){
+        
+        }
+        
+        
+        
+        
+        return answer;
+    }
+}

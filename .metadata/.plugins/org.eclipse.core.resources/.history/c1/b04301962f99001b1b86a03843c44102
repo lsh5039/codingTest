@@ -1,0 +1,75 @@
+package codingTest04;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
+public class Main04 {
+	public static void main(String[] args) {
+		int location = 0;
+		int[] priorities = {1, 1, 9, 1, 1, 1};
+		
+		Main04 app = new Main04();
+		int result = app.solution(priorities, location);
+		System.out.println(result);
+	}
+	
+
+
+	
+	
+	
+    
+    
+    public int solution(int[] priorities, int location) {
+        
+        if(priorities.length == 1) {
+        	return 1;
+        }
+        
+        int answer = 1;
+        List<Integer> list = new ArrayList<Integer>();
+        Queue<Integer> que = new LinkedList<Integer>();
+        int cnt =1;
+        
+        for(Integer item : priorities){
+        	list.add(item);
+        	que.add(item);
+        }
+        
+        while(true) {
+        	int num = que.peek();
+        	
+        	if(num == que.stream().max(Integer::compare).orElse(-1)) {
+        		que.poll();
+        	} else {
+        		answer++;
+        		que.offer(num);
+        	}
+        	
+        	
+        	
+        }
+        
+        
+   
+        
+        
+        
+        
+        
+        
+        
+        
+        int[] arr = new int[priorities.length-1];//결과를담은 array
+        
+        
+        
+        
+        
+        
+        
+        return answer;
+    }
+}
