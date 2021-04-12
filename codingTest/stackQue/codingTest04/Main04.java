@@ -9,8 +9,11 @@ import java.util.Queue;
 
 public class Main04 {
 	public static void main(String[] args) {
-		int location = 0;
-		int[] priorities = {1, 1, 9, 1, 1, 1};
+		/*int location = 0;
+		int[] priorities = {1, 1, 9, 1, 1, 1};*/
+		int location = 2;
+		int[] priorities = {2, 1, 3, 2};
+		
 		
 		Main04 app = new Main04();
 		int result = app.solution(priorities, location);
@@ -42,6 +45,9 @@ public class Main04 {
   					flag = true;
   				}
   			}
+  		
+  			
+  			
 
   			if (flag) {
   				q.offer(q.poll());
