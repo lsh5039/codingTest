@@ -1,0 +1,50 @@
+package codingTest.codingTest01;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class DfsBfs01 {
+	public static void main(String[] args) {
+		DfsBfs01 app = new DfsBfs01();
+		int[] numbers = {1,1,1,1,1};
+		int target = 3;
+		
+		int result = app.solution(numbers, target);
+		System.out.println(result);
+		
+		
+		
+		Queue<String> que = new LinkedList<String>();
+		
+		
+		
+	}
+
+	
+	
+	
+	public int solution(int[] numbers, int target) {
+		int answer = 0;
+		return answer;
+	}
+	
+	
+	public class Node {
+		private String oper;
+		private int val;
+		private Node left;
+		private Node rihgt;
+		
+		public Node(String oper, int val) {
+			this.val = val;
+			this.oper = oper;
+		}
+		
+		public Node(int val) {
+			this.val = val;
+			this.oper = oper;
+		}
+	}
+}
+
+

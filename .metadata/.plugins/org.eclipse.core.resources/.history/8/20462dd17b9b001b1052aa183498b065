@@ -1,0 +1,38 @@
+package codingTest;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Main01 {
+	
+	public static void main(String[] args) {
+		Main01 app = new Main01();
+		
+		int [] numbers = {6, 10, 2};
+		
+		String result = app.solution(numbers);
+		
+		
+	}
+	
+	
+	 public String solution(int[] numbers) {
+	        String answer = "";
+	        char [] strArr = new char[numbers.length-1];
+	        int index = 0;
+	        for(int num : numbers) {
+	        	char strNumChar =String.valueOf(num).charAt(0);
+	        	strArr[index++] = strNumChar;
+	        }
+	        Arrays.sort(strArr);
+	        
+	        
+	        
+	        
+	        
+	        
+	        return answer;
+	    }
+
+}

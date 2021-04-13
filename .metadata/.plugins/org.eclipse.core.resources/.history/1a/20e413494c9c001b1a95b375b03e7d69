@@ -1,0 +1,34 @@
+package codingTest02;
+
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Main2 {
+
+	public static void main(String[] args) {
+		int[] citations = {3, 0, 6, 1, 5,7};//return 3
+		Main2 app = new Main2();
+		int result = app.solution(citations);
+		System.out.println("result :: "+result);
+	}
+	//1 9	
+	public int solution(int[] citations) {
+		if(citations.length == 1) {
+			return 1;
+		}
+		Arrays.sort(citations);
+		
+		for(int i =0; i<citations.length; i++) {
+			
+		}
+		
+		
+				
+		
+		
+		
+		
+		return hIndex;
+	}
+}

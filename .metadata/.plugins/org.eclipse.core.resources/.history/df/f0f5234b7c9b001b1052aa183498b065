@@ -1,0 +1,43 @@
+package codingTest;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Main01 {
+	
+	public static void main(String[] args) {
+		Main01 app = new Main01();
+		
+		int [] numbers = {6, 10, 2};
+		
+		String result = app.solution(numbers);
+		
+		
+	}
+	
+	
+	 public String solution(int[] numbers) {
+	        String answer = "";
+	        List<Map<Integer,Character>> list = new ArrayList<>();
+	        int index = 0;
+	        
+	        for(int num : numbers) {
+	        	Map<Integer,Character> map = new HashMap<Integer, Character>();
+	        	map.put(index++,String.valueOf(num).charAt(0));
+	        	
+	        	
+	        }
+	        Arrays.sort(strArr);
+	        
+	        
+	        
+	        
+	        
+	        
+	        return answer;
+	    }
+
+}

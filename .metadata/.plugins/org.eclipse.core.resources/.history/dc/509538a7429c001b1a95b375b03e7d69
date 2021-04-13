@@ -1,0 +1,12 @@
+package codingTest02;
+
+public class Main02 {
+	public static void main(String[] args) {
+		
+	}
+	
+	public int solution(int[] citations) {
+        int answer = 0;
+        return answer;
+  }
+}
