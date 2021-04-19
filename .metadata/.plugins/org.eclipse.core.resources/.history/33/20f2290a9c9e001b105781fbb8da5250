@@ -1,0 +1,7 @@
+package codingTestfullSearch;
+
+public class FullSearch01 {
+	public static void main(String[] args) {
+		
+	}
+}

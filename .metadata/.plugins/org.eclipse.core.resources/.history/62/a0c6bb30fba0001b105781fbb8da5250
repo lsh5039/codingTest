@@ -1,0 +1,44 @@
+package codingTest.codingTest01;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class DfsBfs01 {
+	public static void main(String[] args) {
+		DfsBfs01 app = new DfsBfs01();
+		int[] numbers = {1,1,1,1,1};
+		int target = 3;
+		
+		int result = app.solution(numbers, target);
+		System.out.println(result);
+	}
+	public int solution(int[] numbers, int target) {
+	  int answer = 0;
+	  
+	  answer = bfs(1, target, numbers, numbers[0]);
+	        
+	        
+	  return answer;
+	}
+	
+	public static int bfs(int idx, int current, int[] numbers, int sum) {
+		if(idx == numbers.length) {
+			if(sum == current) {
+				return 1;
+			} else {
+				return 0;
+			}
+		}
+		
+		int result = 0;
+		result +=bfs(idx+1,current, numbers,sum+numbers[idx]);
+		result += bfs(idx+1, current, numbers, sum+numbers[idx]);
+		
+		return result;
+	}
+	    
+	
+	
+}
+
+

@@ -1,0 +1,29 @@
+package codingTestfullSearch;
+
+public class FullSearch01 {
+	public static void main(String[] args) {
+		int[] answers = {1,2,3,4,5};
+	}
+	
+	public int[] solution(int[] answers) {
+        int[] answer = {};
+        
+        for(int i=0; i<answer.length; i++) {
+        	
+        }
+        
+		for(int i=0; i<answer.length; i++) {
+        	
+        }
+
+		for(int i=0; i<answer.length; i++) {
+			
+		}
+        
+        return answer;
+    }
+		
+	public static solution1(int i) {
+		
+	}
+}
