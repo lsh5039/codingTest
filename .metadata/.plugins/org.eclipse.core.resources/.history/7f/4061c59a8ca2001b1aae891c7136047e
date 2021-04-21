@@ -1,0 +1,19 @@
+package codingTest.codingTest01;
+
+public class DFsBfs02 {
+	public static void main(String[] args) {
+		String[] words = {"hot", "dot", "dog", "lot", "log", "cog"};
+		String begin = "hit";
+		String target = "cog";
+	}
+	
+	public int solution(String begin, String target, String[] words) {
+	   int answer = 0;
+	   
+	   
+	   
+	   
+	   
+	   return answer;
+	}
+}

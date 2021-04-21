@@ -7,5 +7,6 @@
 	<classpathentry kind="src" path="sort"/>
 	<classpathentry kind="src" path="dfsBfs"/>
 	<classpathentry kind="src" path="fullSearch"/>
+	<classpathentry kind="src" path="graph"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

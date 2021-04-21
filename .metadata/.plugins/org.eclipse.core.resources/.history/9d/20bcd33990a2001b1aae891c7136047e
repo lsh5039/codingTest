@@ -1,0 +1,51 @@
+package codingTest.codingTest01;
+
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
+public class DFsBfs02 {
+	public static void main(String[] args) {
+		String[] words = {"hot", "dot", "dog", "lot", "log", "cog"};
+		String begin = "hit";
+		String target = "cog";
+		
+		DFsBfs02 app = new DFsBfs02();
+		app.solution(begin, target, words);
+	}
+	
+	public int solution(String begin, String target, String[] words) {
+	   int answer = 0;
+	   boolean []visited = new boolean[words.length]; 
+	   
+	   
+	  Queue<Node> queue = new LinkedList<Node>();
+	  queue.offer(new Node(begin,0));// 처음 0
+	   
+	   while(!queue.isEmpty()) {
+		   Node current = queue.poll();
+		   if(current.word.equals(target)) {//현재 문자와 같다면
+			  
+		   }
+		   
+	   }
+	   
+	   
+	   
+	   
+	   
+	   
+	   return answer;
+	}
+	
+	
+	public class Node{
+		private String word;
+		private int edge;
+		
+		public Node(String word, int edge) {
+			this.word = word;
+			this.edge = edge;
+		}
+	}
+}
